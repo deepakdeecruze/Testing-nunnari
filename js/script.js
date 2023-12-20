@@ -26,36 +26,36 @@ $(document).ready(function(){
 
 
 
-//Scroll header events
+// //Scroll header events
 
-function yScroll(){
-	var header = document.querySelector("#header");
-		yPos = window.pageYOffset;
-	if(yPos > 630){
-		header.style.background = "rgba(0,0,0,.3)";
-	} else {
-		header.style.background = "none";
-	}
-}
-window.addEventListener("scroll", yScroll);
+// function yScroll(){
+// 	var header = document.querySelector("#header");
+// 		yPos = window.pageYOffset;
+// 	if(yPos > 630){
+// 		header.style.background = "rgba(0,0,0,.3)";
+// 	} else {
+// 		header.style.background = "none";
+// 	}
+// }
+// window.addEventListener("scroll", yScroll);
 
 
 
-//Active header menu item navigation
+// //Active header menu item navigation
 
-jQuery(window).scroll(function(){
-        var $sections = $('section[id]');
-	$sections.each(function(i,el){
-        var top  = $(el).offset().top-80;
-        	bottom = top +$(el).height();
-        	scroll = $(window).scrollTop();
-        	id = $(el).attr('id');
-    	if( scroll > top && scroll < bottom){
-            $('a.header-menu__link--active').removeClass('header-menu__link--active');
-			$('a[href="#'+id+'"]').addClass('header-menu__link--active');
-        }
-    })
- });
+// jQuery(window).scroll(function(){
+//         var $sections = $('section[id]');
+// 	$sections.each(function(i,el){
+//         var top  = $(el).offset().top-80;
+//         	bottom = top +$(el).height();
+//         	scroll = $(window).scrollTop();
+//         	id = $(el).attr('id');
+//     	if( scroll > top && scroll < bottom){
+//             $('a.header-menu__link--active').removeClass('header-menu__link--active');
+// 			$('a[href="#'+id+'"]').addClass('header-menu__link--active');
+//         }
+//     })
+//  });
 
 
 
